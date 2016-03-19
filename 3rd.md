@@ -6,7 +6,8 @@
 正文
 ----------------
 首先自己绘制姓名缩写CPT的图形，并制作为字典存储起来。随后通过循环实现逐行逐列的扫描，具体注释都写在程序里啦，以下给出程序链接
->https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/2nd_lv2.py
+https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/2nd_lv2.py
+
 结论
 -----------------
 本次作业的lv2比较简单，但是lv3我还不会独立实现，先读读书，有所长进再来挑战。

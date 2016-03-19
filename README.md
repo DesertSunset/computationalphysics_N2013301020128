@@ -33,4 +33,4 @@
 
 第三次作业
 ----------------
-> computationalphysics_N2013301020128/3rd.md
+https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/3rd.md
