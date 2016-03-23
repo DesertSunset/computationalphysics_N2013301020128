@@ -34,3 +34,7 @@
 第三次作业
 ----------------
 https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/3rd.md
+
+第四次作业
+-----------------
+https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/4th.md
