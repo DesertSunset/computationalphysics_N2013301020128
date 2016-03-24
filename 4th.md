@@ -39,3 +39,14 @@ $v_{0}=20$
 ![enter image description here](https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/20_006.png)
 
 **注：时间总长度选择6s是因为速度在这时候已趋于稳定，并且比较直观**
+
+下面贴上一些比较极端的图，以下各图步长均为0.006
+$v_{0}=-10000$
+![enter image description here](https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/v%3D-10000.png)
+$v_{0}=10000$
+![enter image description here](https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/v%3D10000.png)
+最终还是10m/s！
+
+结论
+--------------
+从解析解可以看出得出以上各个结果都是不让人意外的，不过在步长取得小得时候，欧拉方法对其的模拟也是恰当的。不过近期决定拜读冯康老师的著作以期对数值模拟有更深入的理解。
