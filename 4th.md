@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 第四次作业
 =================
 
@@ -8,7 +8,7 @@
 
 正文
 ----------------
-本题需要解决的常微分方程为$$\frac{dv}{dt}=a-bv$$
+本题需要解决的常微分方程为<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>$$\frac{dv}{dt}=a-bv$$
 由解析方法解得$$v=\frac{[a-(a-bv_{0})e^{-bt}]}{b}$$
 按照书上的建议，我取了a=10，b=1
 从解析解容易看出，无论$v_{0}$的取值为何，最终都应趋向于$$v_{0}=10$$
