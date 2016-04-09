@@ -31,10 +31,8 @@
 
 最后一项就是给vim安装插件啦，按照学长的github中README的指示，我依次点了那四个管理插件的插件，发现**Vundle**最对我的胃口，安装好Vundle就分分钟把vim插同义词的插件安装上了。不过调出来的查词界面实在是太大了，想办法调整之。
 
-第三次作业
-----------------
-https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/3rd.md
+##[第三次作业](https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/3rd.md)
 
-第四次作业
------------------
-https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/4th.md
+##[第四次作业](https://github.com/wdwycpt/computationalphysics_N2013301020128/blob/master/4th.md)
+
+##[第六次作业](https://www.zybuluo.com/mdeditor#339444)
