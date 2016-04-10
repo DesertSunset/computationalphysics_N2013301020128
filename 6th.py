@@ -13,6 +13,11 @@ import numpy
 g = 9.8
 b2m = 4e-5
 
+class initial_state:
+    def __init__(self, _v = 0, _theta = 0):
+        _rad = _theta*math.pi/180
+        self.vx = _v * math.cos(_rad)
+        self.vy = _v * math.sin(_rad)
 class flight_state:
     def __init__(self, _x = 0, _y = 0, _vx = 0, _vy = 0, _t = 0):
         self.x = _x
@@ -63,17 +68,6 @@ class cannon:
         matplotlib.pyplot.show()
         #show()
 
-#风阻为常数
-class drag_cannon(cannon):
-    def next_state(self, current_state):
-        global g, b2m
-        v = sqrt(current_state.vx * current_state.vx + current_state.vy * current_state.vy)
-        next_x = current_state.x + current_state.vx * self.dt
-        next_vx = current_state.vx - b2m * v * current_state.vx * self.dt
-        next_y = current_state.y + current_state.vy * self.dt
-        next_vy = current_state.vy - g * self.dt - b2m * v * current_state.vy * self.dt
-        #print next_x, next_y
-        return flight_state(next_x, next_y, next_vx, next_vy, current_state.t + self.dt)
 
 #对大气绝热近似下的风阻
 class adiabatic_drag_cannon(cannon):
@@ -92,13 +86,14 @@ class adiabatic_drag_cannon(cannon):
         return flight_state(next_x, next_y, next_vx, next_vy, current_state.t + self.dt)
 
 
-#a = cannon(flight_state(0, 0, 500, 100, 0), _dt = 0.1)
-#a.shoot()
-#b = drag_cannon(flight_state(0, 0, 100, 500, 0), _dt = 0.1)
-#b.shoot()
-c = adiabatic_drag_cannon(flight_state(0, 0, 100, 500, 0), _dt = 0.1)
+#给定初速度大小和角度
+a = initial_state(500,45)
+#无风阻
+b = cannon(flight_state(0, 0, a.vx, a.vy, 0), _dt = 0.1)
+b.shoot()
+#有风阻
+c = adiabatic_drag_cannon(flight_state(0, 0, a.vx, a.vy, 0), _dt = 0.1)
 c.shoot()
-#a.show_trajectory()
-#b.show_trajectory()
+b.show_trajectory()
 c.show_trajectory()
 show()
